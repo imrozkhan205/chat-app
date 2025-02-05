@@ -91,7 +91,7 @@ const SettingsPage = () => {
                 </div>
 
                 {/* Chat Input */}
-                <div className="p-4 border-t border-base-300 bg-base-100">
+                <div className="p-4 border-t border-base-300 bg-base-100 ">
                   <div className="flex gap-2">
                     <input
                       type="text"
