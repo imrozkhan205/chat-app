@@ -13,8 +13,10 @@ import {Toaster} from "react-hot-toast";
 import { useThemeStore } from './store/useThemeStore.js'
 
 const App = () => {
-  const {authUser, checkAuth, isCheckingAuth} = useAuthStore()
+  const {authUser, checkAuth, isCheckingAuth, onlineUsers} = useAuthStore()
   const {theme} = useThemeStore()
+  console.log({onlineUsers});
+  
   
   useEffect(()=>{
     checkAuth();
@@ -31,6 +33,7 @@ const App = () => {
   
   return (
     <div data-theme = {theme}>
+    
       <Navbar />
       <Routes >
       {/* if there is auth user let them see the homepage else take them to the login page */}
